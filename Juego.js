@@ -25,7 +25,7 @@ const celeste = document.getElementById('celeste')
             verde
           }
         }
-
+        ///Oculto el boton empezar si ya inicio el juego
         toggleBtnEmpezar() {
           if (btnEmpezar.classList.contains('hide')) {
             btnEmpezar.classList.remove('hide')
@@ -33,7 +33,7 @@ const celeste = document.getElementById('celeste')
             btnEmpezar.classList.add('hide')
           }
         }
-
+          ///Genero el array con la secuencia de niveles
         generarSecuencia() {
           this.secuencia = new Array(ULTIMO_NIVEL).fill(0).map(n => Math.floor(Math.random() * 4))
         }
